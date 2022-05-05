@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.TransactionsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/transactions_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_theme_primary"
+            app:collapsedTitleTextColor="@color/md_theme_onPrimary"
+            app:contentScrim="@color/md_theme_primary"
+            app:expandedTitleTextColor="@color/md_theme_onPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/transactions_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_list_items_bottom_top"
+                android:paddingTop="@dimen/padding_list_items_bottom_top"
+                android:paddingStart="@dimen/padding_list_items_start_end"
+                android:paddingEnd="@dimen/padding_list_items_start_end"
+                app:layout_collapseMode="pin">
+
+                <TextView
+                    android:id="@+id/toolbar_name_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom|start"
+                    android:textColor="@color/md_theme_onPrimary"
+                    android:textSize="@dimen/toolbar_account_name"
+                    android:typeface="serif"
+                    tools:text="Account_Name"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/toolbar_number_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|start"
+                        android:textColor="@color/md_theme_onPrimary"
+                        android:textSize="@dimen/toolbar_account_number"
+                        android:typeface="serif"
+                        tools:text="Account_Number"
+                        android:layout_weight="1.2"/>
+
+                    <TextView
+                        android:id="@+id/toolbar_balance_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|end"
+                        android:textColor="@color/md_theme_onPrimary"
+                        android:textSize="@dimen/toolbar_account_balance"
+                        android:typeface="serif"
+                        tools:text="Account_Balance"
+                        android:layout_weight="1.8"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactions_list_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <TextView
+        android:id="@+id/no_transaction_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/md_theme_onBackground"
+        android:textSize="@dimen/no_transaction_textView_size"
+        android:typeface="serif"
+        tools:text="@string/no_transactions" />
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

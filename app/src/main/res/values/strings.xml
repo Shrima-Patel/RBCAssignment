@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RBC-Shrima</string>
+    <string name="title_home">Home</string>
+    <string name="title_transactions">Transactions</string>
+    <string name="ok">OK</string>
+
+    <!-- Get started Activity -->
+    <string name="get_started_button_text">Get Started</string>
+    <string name="rbc">RBC</string>
+    <string name="royal_bank_of_canada">Royal Bank\nOf Canada</string>
+    <string name="description_get_started">Welcome to RBC mobile banking application. Assignment done by Shrima Patel</string>
+
+    <!-- Home Fragment -->
+    <string name="all_transaction_text_underlined"><u>All Transactions</u></string>
+    <string name="toolbar_account_summary_title">Account Summary</string>
+
+    <!-- Transaction Fragment -->
+    <string name="all_transaction_text">All Transactions</string>
+    <string name="no_transactions">No transactions to display.</string>
+    <string name="error_fetching_transactions">Error in fetching transactions.</string>
+
+</resources>

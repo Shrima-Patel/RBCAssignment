@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="padding_list_items_bottom_top">8dp</dimen>
+    <dimen name="padding_list_items_start_end">16dp</dimen>
+    <dimen name="accounts_transaction_list_items_textView_size">14sp</dimen>
+
+    <!-- Get started Activity -->
+    <dimen name="get_started_button_text_size">16sp</dimen>
+    <dimen name="margin_get_started_button_bottom_top">64dp</dimen>
+    <dimen name="description_get_started_textView_size">16sp</dimen>
+    <dimen name="description_get_started_textView_margin">16dp</dimen>
+    <dimen name="rbc_full_textView_size">28sp</dimen>
+    <dimen name="rbc_textView_size">56sp</dimen>
+
+    <!-- Home Fragment -->
+    <dimen name="collapsing_toolbar_layout_height">124dp</dimen>
+    <dimen name="all_transaction_textView_marign">16dp</dimen>
+
+    <!-- Transaction Fragment -->
+    <dimen name="no_transaction_textView_size">18sp</dimen>
+    <dimen name="toolbar_account_name">16sp</dimen>
+    <dimen name="toolbar_account_balance">18sp</dimen>
+    <dimen name="toolbar_account_number">16sp</dimen>
+    <dimen name="toolbar_text_margins">4dp</dimen>
+
+</resources>

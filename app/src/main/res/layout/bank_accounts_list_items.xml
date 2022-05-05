@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_list_items_bottom_top"
+        android:paddingTop="@dimen/padding_list_items_bottom_top"
+        android:paddingStart="@dimen/padding_list_items_start_end"
+        android:paddingEnd="@dimen/padding_list_items_start_end"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/md_theme_onBackground"
+                android:textSize="@dimen/accounts_transaction_list_items_textView_size"
+                android:typeface="serif"
+                tools:text="TextView"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/number_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/md_theme_onBackground"
+                android:textSize="@dimen/accounts_transaction_list_items_textView_size"
+                android:typeface="serif"
+                tools:text="TextView"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/balance_textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/md_theme_onBackground"
+            android:textSize="@dimen/accounts_transaction_list_items_textView_size"
+            android:typeface="serif"
+            tools:text="TextView" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
